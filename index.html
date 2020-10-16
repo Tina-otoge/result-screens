@@ -1,0 +1,240 @@
+<!doctype html>
+<title>Rhythm games result screens comparison</title>
+<style>
+	body {
+		background-color: #ddd;
+		max-width: 1000px;
+		margin: 1em auto;
+		padding: 1em;
+	}
+
+	body, a, a:visited, a:active {
+		color: #222;
+	}
+
+	article {
+		margin: 1em 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	article p {
+		margin: 0.2em 0;
+	}
+
+	img {
+		display: block;
+		object-fit: contain;
+		margin: 1em auto;
+		max-width: 100%;
+		box-shadow: 0 0 4px #000;
+		max-height: 700px;
+	}
+
+	.categories li {
+		font-size: x-large;
+		font-family: serif;
+	}
+</style>
+
+<h1>Rhythm games result screens comparison</h1>
+
+<p>
+	I wanted to compare the result screens of all major rhythm games to study their design choices.<br>
+	Please note that the details added above each screenshot are not meant to be my analysis. They are here to add more information about the result screen that can not be conveyed by just a screenshot.
+</p>
+
+<p>
+	Terminology:
+</p>
+<ul>
+	<li>Gameplay screen: The state of the game where the notes are displayed and the player has to hit them.</li>
+	<li>Result screen: The state of the game where the score is displayed.</li>
+	<li>Transition: An animation displayed when the game switches from a state to another.</li>
+	<li>Judge or judgement: Different judges represent different level of accuracy with which a note can be hit. Most games use something like "MISS", "OK", "GOOD", "GREAT", "PERFECT" with some variations.</li>
+	<li>Fail: The conditions to clear the song were not met, usually the HP bar was below a certain level at the end of the song, or it reached 0.</li>
+	<li>Clear: The conditions to clear the song were met.</li>
+	<li>Fullcombo: No notes were missed.</li>
+	<li>Perfect: All notes were hit with the highest judgement available.</li>
+	<li>Grade: A way to reward the player for their score in an easy way to understand and compare, often based on the accuracy. Usually in the form of a letter from F to A. Most games use different grades for higher than A, such as AA and AAA, S, A+, etc.</li>
+	<li>Early/Late or Fast/Slow: Tells the player the amount of notes that were hit after and before the timing required to get the highest judge.</li>
+</ul>
+
+<ol class="categories">
+	<li id="konami">KONAMI games</li>
+
+	<article id="iidx">
+		<h2>beatmania IIDX <small>(arcade, IIDX 27 HEROIC VERSE)</small></h2>
+		<p>"FAILED", "CLEARED" or "FULL COMBO" is additionally written shortly in the middle of the screen when the result screen appears.</p>
+		<p>In the case of a fullcombo, an animation is displayed on the gameplay screen when the last note is hit.</p>
+		<p>The artwork displayed in the background depends on the grade achieved. Higher grade means more epic and colorful artwork.</p>
+		<img src="iidx.png">
+	</article>
+
+	<article id="ddr">
+		<h2>Dance Dance Revolution <small>(arcade, DDR A20 PLUS)</small></h2>
+		<p>"FAILED" or "CLEARED" is written during the transition between the gameplay and result screens.</p>
+		<p>The announcer also speaks "stage cleared" during the transition when the song was cleared.</p>
+		<p>In the case of a fullcombo, an animation is displayed on the gameplay screen when the last note is hit.</p>
+		<p>In the case of a fullcombo, a circle is showed next to the grade. Its color represent the lowest judge achieved. Here the player on the left did some GREATs but no GOODs, so the circle takes the color of the GREAT judge, green. The player on the right did better and got no GREATs, so its circle is the color of the PERFECT judge.</p>
+		<img src="ddr.png">
+	</article>
+
+	<article id="popn">
+		<h2>pop'n music <small>(arcade, pop'n music peace)</small></h2>
+		<p>"Stage failed", "Stage cleared", "FULL COMBO!!" or "PERFECT" is additionally written shortly in the middle of the screen when the result screen appears.</p>
+		<p>The announcer also speaks a phrase depending on the clear type.</p>
+		<p>Either the player's character or the CPU's one will be shown winning depending on if the player cleared or failed.</p>
+		<p>In the case of a fullcombo or a perfect, an animation is displayed on the gameplay screen when the last note is hit.</p>
+		<p>More details can be shown by pressing one of the yellow buttons, including Fast/Slow.</p>
+		<img src="popn.png">
+	</article>
+
+	<article id="gitadora">
+		<h2>GITADORA <small>(arcade, GITADORA Matixx GUITAR)</small></h2>
+		<p>In the case of a fullcombo, an animation is displayed in the corner of the screen when the result screen appears.</p>
+		<img src="gitadora.png">
+	</article>
+
+	<article id="jubeat">
+		<h2>jubeat <small>(arcade, jubeat festo)</small></h2>
+		<p>"Fullcombo" or "Excellent" is displayed in a long animation that covers all the panel when the result screen appears for a fullcombo or a perfect. In the case of a fail or clear, a simple text is displayed in the middle of the screen instead.</p>
+		<img src="jubeat-top.png">
+		<img src="jubeat-panel.png">
+	</article>
+
+	<article id="sdvx">
+		<h2>SOUND VOLTEX <small>(arcade, SOUND VOLTEX VIVID WAVE)</small></h2>
+		<p>The result screen changed a lot from one version to another and the result screen for the upcoming version SOUND VOLTEX EXCEED GEAR is also very different.</p>
+		<p>An animation depending on the clear type is displayed on the gameplay screen after the song ends.</p>
+		<p>In the case a grade AAA or higher was achieved, an animation is displayed on the result screen.</p>
+		<p>In the case a grade AAA or higher was achieved, an animated character is displayed on the side.</p>
+		<img src="sdvx.png">
+	</article>
+
+	<article id="nostalgia">
+		<h2>NOSTALGIA <small>(arcade, ノスタルジア Op.3)</small></h2>
+		<p>During gameplay, an animation is displayed in the middle of the screen each time a grade is achieved, starting from C.</p>
+		<p>An animation depending on the grade and clear type is displayed on the gameplay screen after the song ends.</p>
+		<img src="nostalgia.png">
+	</article>
+
+	<article id="dancerush">
+		<h2>DANCERUSH <small>(arcade, DANCERUSH STARDOM)</small></h2>
+		<p>An animation depending on the clear type is displayed on the gameplay screen when the last note is hit.</p>
+		<img src="dancerush.png">
+	</article>
+
+	<li id="sega">SEGA</li>
+
+	<article id="chuni">
+		<h2>CHUNITHM <small>(arcade, CHUNITHM CRYSTAL)</small></h2>
+		<p>An animation depending on the clear type is displayed on the gameplay screen when the last note is hit.</p>
+		<img src="chuni.png">
+	</article>
+
+	<article id="maimai">
+		<h2>MaiMai <small>(arcade, MaiMai FiNALE)</small></h2>
+		<p>An animation depending on the clear type is displayed on the gameplay screen when the last note is hit.</p>
+		<img src="maimai.png">
+	</article>
+
+	<article id="ongeki">
+		<h2>O.N.G.E.K.I. <small>(arcade, オンゲキ SUMMER+)</small></h2>
+		<p>In the case of a fullcombo, an animation is displayed on the gameplay screen when the last note is hit.</p>
+		<p>Depending on the clear type, an animation is displayed on the gameplay screen when the song ends, shortly after the previous one if a fullcombo was achieved.</p>
+		<img src="ongeki.png">
+	</article>
+
+	<li id="others">Others</li>
+
+	<article id="piu">
+		<h2>Pump It Up <small>(arcade, PIU XX)</small></h2>
+		<p>The background is the song's artwork.</p>
+		<img src="piu.png">
+	</article>
+
+	<article id="respect">
+		<h2>DJMAX RESPECT <small>(PS4 and PC, RESPECT)</small></h2>
+		<p>A button can be pressed to display the list of judges achieved along with Early/Late and other stats.</p>
+		<img src="respect.png">
+	</article>
+
+	<article id="taiko">
+		<h2>Taiko no Tatsujin <small>(arcade, 太鼓の達人ニジイロver.)</small></h2>
+		<p>The game also had several console ports but the UI is different.</p>
+		<p>An animation depending on the clear type is displayed on the gameplay screen after the song ends.</p>
+		<p>The player's character is happy or sad depending on if the song was cleared or not.</p>
+		<img src="taiko.png">
+	</article>
+
+	<article id="gc">
+		<h2>Groove Coaster <small>(arcade, Groove Coaster 4EX)</small></h2>
+		<p>The game initially originated on mobile and also has a console version. The UI is rather similar.</p>
+		<p>In the case of a fullcombo or a perfect, an animation is displayed on the gameplay screen when the last note is hit.</p>
+		<p>The announcer also speaks a phrase depending on the clear type on the result screen.</p>
+		<img src="gc.png">
+	</article>
+
+	<li id="mobile">Mobile games</li>
+	
+	<article id="deemo">
+		<h2>Deemo</h2>
+		<img src="deemo.png">
+	</article>
+
+	<article id="cytus">
+		<h2>Cytus <small>(Cytus II)</small></h2>
+		<img src="cytus.png">
+	</article>
+
+	<article id="voez">
+		<h2>VOEZ</h2>
+		<p>The game also has a console port that is rather identical.</p>
+		<img src="voez.png">
+	</article>
+
+	<article id="lanota">
+		<h2>Lanota</h2>
+		<p>Judge stats can be displayed by tapping "Detail".</p>
+		<img src="lanota.png">
+	</article>
+
+	<article id="llsif">
+		<h2>Love Live! <small>(Love Live! School Idol Festival)</small></h2>
+		<p>The game also has an arcade version and the UI is very different.</p>
+		<img src="llsif.png">
+	</article>
+
+	<article id="bandori">
+		<h2>BanG Dream! <small>(BanG Dream! Girls Band Party!)</small></h2>
+		<img src="bandori.png">
+	</article>
+
+	<article id="tonesphere">
+		<h2>ToneSphere</h2>
+		<img src="tonesphere.png">
+	</article>
+
+	<article id="overrapid">
+		<h2>OverRapid</h2>
+		<img src="overrapid.png">
+	</article>
+
+	<article id="musedash">
+		<h2>Muse Dash</h2>
+		<p>The game also has a near identical PC port.</p>
+		<p>In the case of a fullcombo, an animation is displayed on the gameplay screen when the song ends.</p>
+		<img src="musedash.png">
+	</article>
+
+	<article id="phigros">
+		<h2>Phigros</h2>
+		<img src="phigros.png">
+	</article>
+
+	<article id="arcaea">
+		<h2>Arcaea</h2>
+		<img src="arcaea.png">
+	</article>
+</ol>
